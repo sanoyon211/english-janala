@@ -42,7 +42,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="head" class="sticky top-0 z-70">
       <div class="navbar bg-base-100 shadow-sm relative">
         <div class="navbar-start">
           <div class="dropdown">
@@ -67,17 +67,17 @@
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a href="" class=""
+                <a href="#faq" class=""
                   ><i class="fa-solid fa-circle-question"></i> FAQ</a
                 >
               </li>
               <li>
-                <a href="" class=""
+                <a href="#learn" class=""
                   ><i class="fa-solid fa-book-open"></i> Learn</a
                 >
               </li>
               <li>
-                <a href="" class=""
+                <a href="index.html" class=""
                   ><i class="fa-solid fa-arrow-right-from-bracket"></i>
                   Logout</a
                 >
@@ -145,17 +145,17 @@
           </label>
           <ul class="menu menu-horizontal px-1 space-x-4">
             <li>
-              <a href="" class="btn btn-outline btn-primary"
+              <a href="#faq" class="btn btn-outline btn-primary"
                 ><i class="fa-solid fa-circle-question"></i> FAQ</a
               >
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary"
+              <a href="#learn" class="btn btn-outline btn-primary"
                 ><i class="fa-solid fa-book-open"></i> Learn</a
               >
             </li>
             <li>
-              <a href="" class="btn btn-outline btn-primary"
+              <a href="index.html" class="btn btn-outline btn-primary"
                 ><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a
               >
             </li>
@@ -202,7 +202,7 @@
       </div>
     </section>
 
-    <section class="py-5 w-11/12 mx-auto">
+    <section id="learn" class="py-5 w-11/12 mx-auto">
       <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-10 text-center">
         <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
       </h2>
@@ -234,7 +234,7 @@
     <section id="spinner" class="flex justify-center items-center py-28 hidden">
       <span class="loading loading-dots loading-xl"></span>
     </section>
-
+    
     <section
       id="word-container"
       class="bg-gray-200 w-11/12 rounded-2xl mx-auto p-3 md:p-10 my-10 grid grid-cols-2 gap-2 md:grid-cols-3 md:gap-5"
@@ -248,8 +248,9 @@
         </h4>
       </div>
     </section>
-
-    <section class="w-11/12 mx-auto py-10 md:py-20">
+    
+    <!-- FAQ section -->
+    <section id="faq" class="w-11/12 mx-auto py-10 md:py-20">
       <h2 class="text-3xl md:text-5xl font-bold mb-4 text-center">
         <span class="text-[#00BCFF]">Frequently</span> Asked Questions
       </h2>
